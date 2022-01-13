@@ -1,0 +1,66 @@
+.faq 
+	border-radius: 3px
+	&__inner
+		padding: 50px 56px 60px 56px
+		background: $white
+
+		.faq__subtitle 
+			width: 100%
+			max-width: 500px
+			font-size: 13px
+			line-height: 16.9px
+			margin-bottom: 30px
+			>a
+				letter-spacing: 1pxs
+				font-weight: 600
+				color: $accent
+
+		.faq__tabs 
+
+			.faq__tab 
+				padding: 27px
+				padding-right: 65px
+				position: relative
+				border: 1px solid #ececec;
+				margin-bottom: 10px
+				cursor: pointer
+				&:last-child
+					margin-bottom: 0
+				>span
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					background: $accent
+					position: absolute
+					right: 27px
+					top: 50%
+					transform: translateY(-50%)
+					display: flex
+					justify-content: center
+					align-items: center
+					&::after
+						content: ""
+						width: 17px
+						height: 10px
+						display: block
+						background: url(../img/icons/arrow.svg) no-repeat center center
+						position: absolute
+
+				&-title 
+					font-size: 15px
+					font-weight: 700
+					line-height: 18px
+
+				&-content 
+					max-width: 658px
+					margin-top: 20px
+					display: none
+
+				&.active
+					.faq__tab-content
+						display: block
+					>span
+						transform: rotate(180deg)
+
+
+			

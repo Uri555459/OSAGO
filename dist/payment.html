@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>ОСАГО</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<nav class="nav">
+						<a href="#" class="menu-link">
+							<span></span>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+							<li class="nav__item"><a href="policy-selection.html" class="nav__link">Выбор полиса</a></li>
+							<li class="nav__item"><a href="decor.html" class="nav__link">Оформление</a></li>
+							<li class="nav__item active"><a href="payment.html" class="nav__link">Оплата</a></li>
+						</ul>
+					</nav>
+					<div class="lang"><span>Русский</span> / <span>Українська</span> </div>
+				</div>
+				<div class="header-title">
+					<h1 class="title">Полис <span>ОСАГО</span> онлайн</h1>
+					<div class="change-selection">Изменить выбор</div>
+				</div>
+				<div class="policy-selection">
+
+					<div class="policy-selection__item">
+						<img src="img/policy-selection/1.png" alt="">
+						<div class="policy-selection__item-stars">
+							<div class="policy-selection__item-stars__item">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+							</div>
+						</div>
+						<div class="franchise">Франшиза: <span>0,00 грн.</span></div>
+						<div class="validity">Срок действия: <span>12 мес.</span></div>
+						<div class="price">1132,00 грн.</div>
+					</div>
+				</div>
+
+				<h2 class="section__title">Введите платежные данные</h2>
+
+				<form class="payment-form">
+					<div class="payment-form__title">Введите номер карты</div>
+					<input type="text" class="payment-form__card-number" placeholder="ХХХХ ХХХХ ХХХХ ХХХХ" required>
+					<div class="payment-form__inner">
+						<div class="payment-form__input-wrap">
+							<div>Срок действия</div>
+							<input type="text" class="payment-form__validity" placeholder="01" required>
+							<span>/</span>
+							<input type="text" class="payment-form__validity" placeholder="20" required>
+						</div>
+						<div class="payment-form__input-wrap">
+							<div>CVC/CVV</div>
+							<label><input type="text" class="payment-form__cvc" placeholder="XXX" required>
+								<span class="card-visible">?</span>
+							</label>
+						</div>
+					</div>
+					<div class="payment-form__button-wrap">
+						<div class="payment-form__button-title">Cумма к оплате:<span>1132,00 грн.</span></div>
+						<button class="payment-form__button btn">Подтвердить оплату</button>
+					</div>
+					<div class="card-img">
+						<img src="img/card.png" alt="">
+					</div>
+				</form>
+				
+			</div>
+		</header>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__copy">
+						<p>ОСАГО - онлайн, быстро и надёжно Україна 02000, м.Київ, Раїси Окіпної, 2</p>
+						<p>Все права защищены © 2020</p>
+					</div>
+					<div class="footer__link">
+						<div class="footer__link-title">Полезные ссылки:</div>
+						<a href="#!">Социальная ответственность</a>
+						<a href="public-offer.html">Публичная оферта</a>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-title">Контакты отдела продаж:</div>
+						<a href="tel:+380443337451">+38 (044) 333-74-51</a>
+						<a href="mailto:help@ewa.ua">help@ewa.ua</a>
+					</div>
+					<div class="footer__payment-systems">
+						<div class="footer__payment-systems__title">Платержные системы:</div>
+						<div class="footer__payment-systems__img-wrap">
+							<img src="img/icons/footer-icon-1.svg" alt="">
+							<img src="img/icons/footer-icon-2.svg" alt="">
+							<img src="img/icons/footer-icon-3.svg" alt="">
+							<img src="img/icons/footer-icon-4.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal Big -->
+		<div class="modal-overlay">
+			<div class="modal__wrap">
+				<form class="modal">
+					<div class="modal__title">Заказать обратный звонок</div>
+					<input type="text" class="modal__input" placeholder="Введите ваше имя" required>
+					<input type="text" class="modal__input" placeholder="Введите ваш номер телефона" required>
+					<button class="modal__btn btn">Заказать звонок</button>
+					<p class="modal__politics">Ваши данные защищены и не будут
+						переданы третьим лицам</p>
+					<img src="img/closed.png" alt="closed" class="modal__closed">
+				</form>
+			</div>
+		</div>
+
+		<!-- Modal Small -->
+		<div class="modal-small">
+			<span>5</span> человек, сегодня оформили <span>ОСАГО</span> у нас на сайте
+			<img class="modal-small__closed" src="img/closed-2.png" alt="">
+		</div>
+
+	</div>
+	<!-- /.wrapper -->
+
+
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

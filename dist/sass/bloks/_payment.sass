@@ -1,0 +1,97 @@
+.payment-form
+	width: 100%
+	max-width: 542px
+	background: $white
+	box-shadow: 0px 0px 50px rgba(52, 77, 141, 0.05)
+	border-radius: 3px
+	padding: 40px 35px
+	position: relative
+	margin-bottom: 100px
+	&__title
+		font-size: 12px
+		line-height: 14px
+		color: rgba($black, .5)
+		margin-bottom: 10px
+	input
+		border: 1px solid #ECECEC
+		padding: 20px
+		&::placeholder
+			font-size: 15px
+			line-height: 17px
+			color: rgba($black, .5 )	
+	&__card-number
+		width: 100%
+		max-width: 423px
+		margin-bottom: 20px
+	&__inner
+		display: flex
+		align-items: flex-end
+		margin-bottom: 50px
+		.payment-form__input-wrap
+			white-space: nowrap
+			div
+				font-size: 12px
+				line-height: 14px
+				color: rgba($black, .5)
+				margin-bottom: 10px
+			.payment-form__validity
+				width: 60px
+				&:last-child
+					margin-right: 42px
+			span
+				font-size: 15px
+				display: inline-block	
+				margin: 0 6px 
+				line-height: 16px
+				color: rgba($black, .5 )	
+		.payment-form__input-wrap
+			&:last-child	
+				width: 100%
+				max-width: 237px
+				label	
+					width: 100%
+					max-width: 237px
+					position: relative
+					.payment-form__cvc
+						width: 100%
+						max-width: 237px
+					span
+						width: 22px
+						height: 22px
+						border-radius: 50%
+						background: $accent
+						display: block
+						position: absolute
+						top: 0
+						right: 18px
+						display: flex
+						justify-content: center
+						align-items: center
+						color: $white
+						font-size: 15px
+						cursor: pointer
+	.card-img
+		img
+			width: 100%
+			max-width: 541px
+			height: auto
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-145%)
+			display: none
+	.payment-form__button-wrap
+
+		.payment-form__button-title
+			font-size: 14px
+			line-height: 14px
+			color: rgba($black, .5)
+			display: inline-block
+			margin-right: 73px
+			span
+				display: block
+				margin-top: 10px
+				font-size: 18px
+				color: $black
+				font-weight: 700
+		.payment-form__button
