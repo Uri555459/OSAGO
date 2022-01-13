@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+	<title>ОСАГО</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header-top">
+					<nav class="nav">
+						<a href="#" class="menu-link">
+							<span></span>
+						</a>
+						<ul class="nav__list">
+							<li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+							<li class="nav__item"><a href="policy-selection.html" class="nav__link">Выбор полиса</a></li>
+							<li class="nav__item active"><a href="decor.html" class="nav__link">Оформление</a></li>
+							<li class="nav__item"><a href="payment.html" class="nav__link">Оплата</a></li>
+						</ul>
+					</nav>
+					<div class="lang"><span>Русский</span> / <span>Українська</span> </div>
+				</div>
+				<div class="header-title">
+					<h1 class="title">Полис <span>ОСАГО</span> онлайн</h1>
+					<div class="change-selection">Изменить выбор</div>
+				</div>
+				<div class="policy-selection">
+
+					<div class="policy-selection__item">
+						<img src="img/policy-selection/1.png" alt="">
+						<div class="policy-selection__item-stars">
+							<div class="policy-selection__item-stars__item">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+								<img src="img/policy-selection/star.png" alt="">
+							</div>
+						</div>
+						<div class="franchise">Франшиза: <span>0,00 грн.</span></div>
+						<div class="validity">Срок действия: <span>12 мес.</span></div>
+						<div class="price">1132,00 грн.</div>
+					</div>
+				</div>
+
+				<h2 class="section__title">Введите данные для оформления полиса</h2>
+				<form class="decor-frorm">
+					<div class="decor-frorm__row-1">
+						<div class="decor-frorm__row__title">Контактные данные</div>
+						<div class="decor-frorm__row-1__inner">
+							<div class="decor-frorm__row-1__input-wrap">
+								<input type="tel" placeholder="Введите номер телефона" required>
+								<p class="decor-frorm__row-subtitle"><span>*</span>Мы отправим вам СМС с кодом</p>
+							</div>
+							<div class="decor-frorm__row-1__input-wrap">
+								<input type="email" placeholder="Введите ваш E-mail" required>
+								<p class="decor-frorm__row-subtitle"><span>*</span>На этот e-mail будет отправлен электронный полис</p>
+							</div>
+						</div>
+					</div>
+					<div class="decor-frorm__row-2">
+						<div class="decor-frorm__row__title">Личные данные</div>
+						<div class="decor-frorm__row-2__inner">
+							<input type="text" placeholder="Ваше имя" required>
+							<input type="text" placeholder="Ваша фамилия" required>
+							<input type="text" placeholder="Ваше отчество" required>
+							<input type="text" placeholder="Идентификационный код">
+						</div>
+						<p class="decor-frorm__row-subtitle"><span>*</span>Все данные обязательно вводить на Украинском языке</p>
+					</div>
+					<div class="decor-frorm__row-3">
+						<div class="decor-frorm__row__title">Документ:
+							<span>Паспорт</span>
+							<span>ID-Карта</span>
+							<span>Права</span>
+						</div>
+						<div class="decor-frorm__row-3__inner">
+							<input type="text" placeholder="Серия" required>
+							<input type="text" placeholder="Номер" required>
+							<input type="text" placeholder="Кем был выдан" required>
+							<input type="text" placeholder="Когда был выдан?" required>
+						</div>
+					</div>
+					<div class="decor-frorm__row-4">
+						<div class="decor-frorm__row__title">Ваш адрес</div>
+						<div class="decor-frorm__row-4__inner">
+							<input type="text" placeholder="Город\Населенный пункт" required>
+							<input type="text" placeholder="Название улицы" required>
+							<input type="text" placeholder="Номер дома" required>
+							<input type="text" placeholder="Номер квартиры" required>
+						</div>
+					</div>
+					<div class="decor-frorm__row-5">
+						<div class="decor-frorm__row__title">Транспортное средство</div>
+						<div class="decor-frorm__row-5__inner">
+							<div class="decor-frorm__row-5__input-wrap">
+								<div>Марка<span title="Введите марку авто">?</span></div>
+								<input type="text" placeholder="Audi" required>
+							</div>
+							<div class="decor-frorm__row-5__input-wrap">
+								<div>Модель<span title="Введите модель авто">?</span></div>
+								<input type="text" placeholder="A6" required>
+							</div>
+							<div class="decor-frorm__row-5__input-wrap">
+								<div>№ Шасси<span title="Введите номер Шасси">?</span></div>
+								<input type="text" placeholder="xxxxxxxxxxxxxxxxx" required>
+							</div>
+							<div class="decor-frorm__row-5__input-wrap">
+								<div>Гос. номер<span title="Введите гос. номер вашего авто">?</span></div>
+								<input type="text" placeholder="АА1234АА" required>
+							</div>
+							<div class="decor-frorm__row-5__input-wrap">
+								<div>Год выпуска<span title="Введите год выпуска вашего авто">?</span></div>
+								<input type="text" placeholder="2006" required>
+							</div>
+						</div>
+					</div>
+					<div class="decor-frorm__row-6">
+						<div class="decor-frorm__row__title">Период действия: <span>01.02.2020</span>
+						<span>- 04.02.2021</span>
+						<span>(12 месяцев)</span></div>
+					</div>
+					<div class="decor-frorm__row-7">
+						<div>
+							<input type="checkbox" id="decor-frorm__check">
+							<label for="decor-frorm__check">Я принимаю условия договора <a href="public-offer.html">публичной оферты</a>
+								ххххх.ua , подтверждаю
+								достоверность всех
+								данных.</label>
+						</div>
+					</div>
+					<div class="decor-frorm__row-8">
+						<button class="decor-frorm__row-8__btn btn">Перейти к оплате</button>
+						<div>
+							<span>Стоимость:</span>
+							<span>1132,00 грн.</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</header>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__copy">
+						<p>ОСАГО - онлайн, быстро и надёжно Україна 02000, м.Київ, Раїси Окіпної, 2</p>
+						<p>Все права защищены © 2020</p>
+					</div>
+					<div class="footer__link">
+						<div class="footer__link-title">Полезные ссылки:</div>
+						<a href="#!">Социальная ответственность</a>
+						<a href="public-offer.html">Публичная оферта</a>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts-title">Контакты отдела продаж:</div>
+						<a href="tel:+380443337451">+38 (044) 333-74-51</a>
+						<a href="mailto:help@ewa.ua">help@ewa.ua</a>
+					</div>
+					<div class="footer__payment-systems">
+						<div class="footer__payment-systems__title">Платержные системы:</div>
+						<div class="footer__payment-systems__img-wrap">
+							<img src="img/icons/footer-icon-1.svg" alt="">
+							<img src="img/icons/footer-icon-2.svg" alt="">
+							<img src="img/icons/footer-icon-3.svg" alt="">
+							<img src="img/icons/footer-icon-4.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Modal Big -->
+		<div class="modal-overlay">
+			<div class="modal__wrap">
+				<form class="modal">
+					<div class="modal__title">Заказать обратный звонок</div>
+					<input type="text" class="modal__input" placeholder="Введите ваше имя" required>
+					<input type="text" class="modal__input" placeholder="Введите ваш номер телефона" required>
+					<button class="modal__btn btn">Заказать звонок</button>
+					<p class="modal__politics">Ваши данные защищены и не будут
+						переданы третьим лицам</p>
+					<img src="img/closed.png" alt="closed" class="modal__closed">
+				</form>
+			</div>
+		</div>
+
+		<!-- Modal Small -->
+		<div class="modal-small">
+			<span>5</span> человек, сегодня оформили <span>ОСАГО</span> у нас на сайте
+			<img class="modal-small__closed" src="img/closed-2.png" alt="">
+		</div>
+
+	</div>
+	<!-- /.wrapper -->
+
+
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

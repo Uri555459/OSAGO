@@ -1,0 +1,254 @@
+.decor-frorm 
+	margin-top: 40px
+	&__row-1, 
+	&__row-2,
+	&__row-3,
+	&__row-4,
+	&__row-5, 
+	&__row-6, 
+	&__row-7
+		padding: 40px 35px 30px 35px
+		background: $white
+		box-shadow: 0px 0px 50px rgba(52, 77, 141, 0.05)
+		border-radius: 3px
+		margin-bottom: 10px
+	&__row-1 
+		&__inner 
+			display: flex
+			flex-wrap: wrap
+		.decor-frorm__row-1__input-wrap 
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+		.decor-frorm__row-1__input-wrap 
+			width: 100%
+			max-width: 423px
+			margin-bottom: 15px
+			input
+				padding: 20px
+				border: 1px solid #ECECEC
+				width: 100%
+				max-width: 423px
+				margin-bottom: 10px
+				&::placeholder
+					color: rgba($black, .5)
+.decor-frorm__row__title
+	font-weight: 700
+	font-size: 18px
+	line-height: 25px
+	margin-bottom: 25px
+	color: $black
+.decor-frorm__row-subtitle
+	font-size: 14px
+	line-height: 16px
+	color: #5C5C5C
+	span
+		color: $red
+.decor-frorm__row-2 
+
+	&__inner 
+		display: flex
+		flex-wrap: wrap
+		input
+			padding: 20px
+			border: 1px solid #ECECEC
+			width: 100%
+			max-width: 250px
+			margin-bottom: 10px
+			margin-right: 15px
+			&::placeholder
+				color: rgba($black, .5)
+			&:last-child
+				margin-right: 0
+.decor-frorm__row-3 
+	.decor-frorm__row__title 
+		display: flex
+		flex-wrap: wrap
+		span
+			font-weight: 600
+			font-size: 18px
+			line-height: 21px
+			color: #5C5C5C
+			display: inline-block
+			margin-left: 15px
+			cursor: pointer
+			&:first-child
+				margin-left: 35px
+				color: $accent
+				border-bottom: 1px dashed rgba(10,143,239,0.5)
+	.decor-frorm__row-3__inner 
+		display: flex
+		flex-wrap: wrap
+		input
+			padding: 20px
+			border: 1px solid #ECECEC
+			width: 100%
+			margin-bottom: 10px
+			margin-right: 15px
+			&::placeholder
+				color: rgba($black, .5)
+			&:last-child
+				margin-right: 0
+			&:nth-child(1),
+			&:nth-child(2)
+				max-width: 100px
+			&:nth-child(3)
+				max-width: 550px
+			&:nth-child(4)
+				max-width: 250px
+.decor-frorm__row-4 
+	&__inner 
+		display: flex
+		flex-wrap: wrap
+		input
+			padding: 20px
+			border: 1px solid #ECECEC
+			width: 100%
+			margin-bottom: 10px
+			margin-right: 15px
+			&::placeholder
+				color: rgba($black, .5)
+			&:last-child
+				margin-right: 0
+			&:nth-child(1),
+			&:nth-child(2)
+				max-width: 270px
+			&:nth-child(3)
+				max-width: 210px
+			&:nth-child(4)
+				max-width: 250px
+.decor-frorm__row-5 
+	&__inner 
+		display: flex
+		flex-wrap: wrap
+		.decor-frorm__row-5__input-wrap 
+			>div
+				font-size: 12px
+				color: rgba($black, .5)
+				margin-bottom: 10px
+				span
+					width: 14px
+					height: 14px
+					background: $accent
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					color: $white
+					border-radius: 50%
+					font-size: 10px
+					font-weight: 700
+					margin-left: 5px
+					cursor: pointer
+			input
+				padding: 20px
+				border: 1px solid #ECECEC
+				width: 100%
+				margin-bottom: 10px
+				&::placeholder
+					color: rgba($black, .5)
+		.decor-frorm__row-5__input-wrap	
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+			&:nth-child(1),
+			&:nth-child(2)
+				input
+					max-width: 200px
+				&:nth-child(3)
+					input
+						max-width: 270px
+				&:nth-child(4),
+				&:nth-child(5)
+					input
+						max-width: 157px
+.decor-frorm__row-6 
+	.decor-frorm__row__title 
+		span
+			display: inline-block
+			font-weight: 600
+			font-size: 18px
+			line-height: 21px
+			color: $black
+			&:first-child
+				margin-left: 30px
+				color: $accent
+			&:last-child
+				font-size: 18px
+				line-height: 21px
+				color: #5C5C5C
+				margin-left: 20px
+				font-weight: normal
+.decor-frorm__row-7 
+	>div
+		display: inline-block
+		position: relative
+		text-align: center
+		>input[type="checkbox"]
+			display: none
+		input[type="checkbox"]:checked + label:before,
+		input[type="checkbox"]:not(:checked) + label:before
+			content: ""
+			display: block
+			width: 15px
+			height: 15px
+			border: 1px solid #c2c2c2
+			border-radius: 50%
+			position: absolute
+			left: 0
+			top: 5px
+		input[type="checkbox"]:checked + label:after,
+		input[type="checkbox"]:not(:checked) + label:after
+			content: ""
+			width: 5px
+			height: 5px
+			background-color: #0a8fef
+			border-radius: 50%
+			position: absolute
+			left: 5px
+			top: 13px
+			transform: translateY(-50%)
+			display: none
+		input[type="checkbox"]:checked + label:after
+			display: block
+		>label
+			font-size: 15px
+			font-weight: 400
+			padding-left: 25px
+			position: relative
+			cursor: pointer
+			line-height: 17px
+			color: #5C5C5C
+			>a
+				color: $accent
+				font-size: 15px
+				font-weight: 600
+				position: relative
+				cursor: pointer
+				line-height: 17px
+.decor-frorm__row-8 
+	display: flex
+	align-items: center
+	padding-top: 40px
+	padding-bottom: 100px
+	flex-wrap: wrap
+	.decor-frorm__row-8__btn 
+		margin-right: 30px
+	>div	
+		display: flex
+		align-items: center
+		>span
+			font-size: 15px
+			line-height: 17px
+			color: #5C5C5C
+			margin-right: 10px
+		>span:last-child
+			font-weight: 700
+			font-size: 30px
+			line-height: 36px
+			color: $black
+			margin-right: 0
+
+
+
+
+

@@ -1,0 +1,44 @@
+.policy-pocket 
+	padding-top: 66px
+	padding-bottom: 137px
+
+	&__inner 
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	.policy-pocket__text 
+		width: 100%
+		max-width: 620px
+		margin-left: 55px
+
+		.policy-pocket__title 
+			color: $black
+			font-size: 49px
+			font-weight: 700
+			line-height: 35px
+			margin-bottom: 20px
+
+		.policy-pocket__description 
+			font-size: 16px
+			line-height: 20.8px
+			margin-bottom: 40px
+			max-width: 426px
+
+		.policy-pocket__btn 
+			display: inline-block
+			position: relative
+			padding-right: 70px
+			&::after
+				content: ""
+				width: 19px
+				height: 19px
+				background: url(../img/icons/telegram.svg) no-repeat center center
+				position: absolute
+				top: 50%
+				right: 41px
+				transform: translateY(-50%)
+
+
+	.policy-pocket__img 
+		margin-right: 40px
